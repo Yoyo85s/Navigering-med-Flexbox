@@ -1,3 +1,192 @@
-html, body {
+
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
+
+
+
+
+
+
+
+
+.btn-yellow {
+    background-color: #f9d783;
+    border: 1px solid #f9d783;
+    color: #191919;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+
+    }
+     
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+    }
+}
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+     
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+    }
+}
+header {
+    background-color: #F0EFE9;
+    padding: 16px;
     
+       
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+        
+        .menu-bars {
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+            
+            @media(min-width:992px ) {
+                display: none;
+            }
+            
+
+        }
+        .menu {
+
+            display:none;
+            flex: 1;
+            
+            
+                @media (min-width:992px) {
+                    display: block;
+                }
+
+
+                .top-menu {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .contant-information {
+                        display: flex;
+                        .contant-box {
+                            padding-right: 30px;
+                            margin-right: 30px;
+                            border-right: 1px solid color #DAD9D3 ;
+                        }
+                    }
+                    
+                }
+                
+
+                
+        }
+        
+        
+    } 
+                
+}
+
+
+.showcase {
+    background-color: #F0EFE9;
+
+    .container {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+     }
+        .contant {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+
+            @media (min-width: 1200px) {
+                text-align: left;
+            }
+            
+
+            h1{
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+               
+                
+                
+                @media (min-width: 768px) {
+                    font-size: 70px;
+                }
+                
+                @media (min-width: 1400px) {
+                    font-size: 86px;
+                }
+
+                
+            }
+
+            p {
+                
+                font-size: 18px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                @media (min-width: 768px) {
+                    font-size: 20px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                
+            }
+            a { 
+                margin-right: 0px;
+                display: block;
+                margin-bottom: 20px;
+
+                @media (min-width: 768px){
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+            }
+
+
+
+
+        }
+        img { 
+            display: none;
+            margin-right: -15px;
+
+            @media (min-width: 1200px) {
+                display: block;
+            }
+                
+            
+        }
+
 }
