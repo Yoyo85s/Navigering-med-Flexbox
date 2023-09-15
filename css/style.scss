@@ -62,6 +62,24 @@ html, body {
     }
 }
 
+.section-title{
+    // som på vedion //
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    p {
+        color: #F94D1C;
+        
+    }
+
+    h2 {
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+    }
+}
+
 header {
     background-color: #F0EFE9;
     padding: 16px;
@@ -129,9 +147,7 @@ header {
                         }
                         
 
-                        /*&.last {
-                            border: none;
-                        }*/
+                        
                     }
                     .content-box-last {
                         font-size: 15px;
@@ -281,4 +297,17 @@ header {
             
         }
 
+}
+
+
+// Project & case studies section //
+
+.project-and-case{
+    .container{
+
+        .section-title {
+            text-align: center;
+            padding-bottom: 20px; // som på vedion
+        }
+    }
 }

@@ -51,6 +51,20 @@ html, body {
   color: #F0EFE9;
 }
 
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  color: #F94D1C;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -109,9 +123,6 @@ header .container .menu .top-menu .contact-information .content-box {
   font-size: 15px;
   font-weight: 300;
   border-right: 1px solid #dad9d3;
-  /*&.last {
-      border: none;
-  }*/
 }
 header .container .menu .top-menu .contact-information .content-box i {
   margin-right: 5px;
@@ -223,4 +234,9 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
   .showcase img {
     display: block;
   }
+}
+
+.project-and-case .container .section-title {
+  text-align: center;
+  padding-bottom: 20px;
 }
