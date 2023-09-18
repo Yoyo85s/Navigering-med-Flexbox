@@ -15,11 +15,6 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  /*&:hover {
-      background-color: #191919;
-      border: 1px solid #f9d783;
-      color: #191919;
-  }*/
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -29,6 +24,46 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+}
+
+.btn-yellow {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-yellow i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-yellow:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-black:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #191919;
+  color: #191919;
 }
 
 .btn-transparent {
@@ -52,17 +87,30 @@ html, body {
 }
 
 .section-title {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
 }
 .section-title p {
   color: #F94D1C;
+  margin-bottom: 10px;
 }
 .section-title h2 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
+}
+
+.center-contant {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 header {
@@ -236,7 +284,64 @@ header .container .menu .main-menu nav a.active ::after, header .container .menu
   }
 }
 
+/* Container for projects and cases section */
+.project-and-case .container {
+  /* Section title styles */
+  /* Grid for projects and cases */
+}
 .project-and-case .container .section-title {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 20px; /* Add a comment if necessary */
+}
+.project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  /* Individual project or case item */
+}
+@media (min-width: 768px) {
+  .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-and-case .container .project-and-cases .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+  /* Read more link */
+}
+.project-and-case .container .project-and-cases .project img {
+  width: 100%;
+  height: auto;
+}
+.project-and-case .container .project-and-cases .project h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dad9d3;
+}
+.project-and-case .container .project-and-cases .project .readmore {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: none;
+  /* Icon within the readmore link */
+}
+.project-and-case .container .project-and-cases .project .readmore i {
+  margin-left: 3px;
+}
+.project-and-case .container .project-and-cases .project:hover .readmore {
+  text-decoration: underline;
+}
+.project-and-case .container .project-and-cases .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
 }
